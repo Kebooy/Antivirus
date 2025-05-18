@@ -15,7 +15,6 @@ import json     # Para que los virus ignorados persistan entre sesiones
 # hexdigest(): Convierte un hash (que es binario) a un texto legible con letras y números
 # self.vt_client.get_object(...): Con esta función le pedimos a VirusTotal información sobre un archivo (por su hash). Nos devuelve un “informe” con estadísticas sobre ese archivo.
 # report.last_analysis_stats.get("malicious", 0): Accede al informe que devuelve VirusTotal y busca cuántos antivirus detectaron ese archivo como peligroso. Si no encuentra el dato, devuelve 0.
-# b"...": Esto representa un texto en formato binario. Lo usamos para comparar directamente con el contenido de los archivos
 # os.path.basename(archivo): Saca solo el nombre del archivo, sin la ruta. Por ejemplo, si el archivo está en C:/algo/malware.exe, esto devuelve solo malware.exe.
 # os.path.join(...): Une correctamente partes de rutas del sistema operativo. Así se forma una ruta válida como cuarentena/malware.exe, sin errores por las barras (/, \).
 # for raiz, _, archivos in os.walk(directorio): : Recorre todas las carpetas y subcarpetas dentro del directorio que queremos escanear. archivos contiene la lista de archivos en cada carpeta

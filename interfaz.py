@@ -1,4 +1,4 @@
-from ttkbootstrap import Frame, Label, Button, ScrolledText, Style
+from ttkbootstrap import Frame, Label, Button, ScrolledText
 from ttkbootstrap.constants import *
 from antivirus import Antivirus
 from tkinter import messagebox
@@ -36,7 +36,7 @@ class AntivirusGUI:
         botones.pack(fill=X)
 
         Button(botones, text="Escaneo Rápido", bootstyle="primary", width=20,
-               command=self.hilo_escanear_rapido).pack(side=LEFT, padx=10)
+               command=self.hilo_escanear_rapido).pack(side=LEFT, padx=10) # No funciona
 
         Button(botones, text="Escaneo Completo", bootstyle="warning", width=20,
                command=self.hilo_escanear_completo).pack(side=LEFT, padx=10)

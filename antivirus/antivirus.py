@@ -7,7 +7,7 @@ from .hash_analyzer import HashAnalyzer
 from .heuristic_analyzer import HeuristicAnalyzer
 from .virustotal_scanner import VirusTotalScanner
 from .quarantine_manager import QuarantineManager
-from .logger import Logger
+from logger import Logger
 from database.hash_db import HashDB
 
 # DUDAS
@@ -44,7 +44,6 @@ class Antivirus:
         self.heuristic = HeuristicAnalyzer()
         self.virustotal = VirusTotalScanner("6370218ae16f433996cf763f16ae4b5227cf7b7a14e1ce196bb96acfcc6b65d4")
         self.quarantine = QuarantineManager()
-        self.logger = Logger()
         self.db = HashDB()
         self.wmi_client = wmi.WMI()
         self.archivo_ignorados = "ignorados.json"

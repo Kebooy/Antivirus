@@ -1,5 +1,4 @@
 from datetime import datetime
-import os
 
 class Logger:
     def __init__(self, archivo_log="registro_actividad.log"):

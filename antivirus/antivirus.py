@@ -3,11 +3,11 @@ import os       # Operaciones con el sistema de archivos
 import ctypes   # Para comprobar privilegios de administrador en Windows
 import json     # Para que los virus ignorados persistan entre sesiones
 
-from hash_analyzer import HashAnalyzer
-from heuristic_analyzer import HeuristicAnalyzer
-from virustotal_scanner import VirusTotalScanner
-from quarantine_manager import QuarantineManager
-from logger import Logger
+from .hash_analyzer import HashAnalyzer
+from .heuristic_analyzer import HeuristicAnalyzer
+from .virustotal_scanner import VirusTotalScanner
+from .quarantine_manager import QuarantineManager
+from .logger import Logger
 from database.hash_db import HashDB
 
 # DUDAS

@@ -1,7 +1,7 @@
 import os # Operaciones con el sistema de archivos
 import shutil # Para mover archivos (poner en cuarentena)
 import stat # Para cambiar permisos de archivos y directorios
-from logger import Logger
+from antivirus.logger import Logger
 
 class QuarantineManager:
     def __init__(self, carpeta="cuarentena"):

@@ -1,4 +1,4 @@
-from logger import Logger
+from antivirus.logger import Logger
 
 class HeuristicAnalyzer:
     def __init__(self):
@@ -6,7 +6,6 @@ class HeuristicAnalyzer:
 
     def heuristica_archivo(self, archivo):
         """
-        Análisis heurístico:
         Busca patrones de comportamiento sospechoso comunes en malware.
         Compara los patrones byte a byte con el contenido del archivo.
         Detecta si hay más de 3 indicadores maliciosos.

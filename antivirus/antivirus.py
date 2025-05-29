@@ -3,28 +3,15 @@ import os       # Operaciones con el sistema de archivos
 import ctypes   # Para comprobar privilegios de administrador en Windows
 import json     # Para que los virus ignorados persistan entre sesiones
 
-from .hash_analyzer import HashAnalyzer
-from .heuristic_analyzer import HeuristicAnalyzer
-from .virustotal_scanner import VirusTotalScanner
-from .quarantine_manager import QuarantineManager
-from logger import Logger
+from antivirus.hash_analyzer import HashAnalyzer
+from antivirus.heuristic_analyzer import HeuristicAnalyzer
+from antivirus.virustotal_scanner import VirusTotalScanner
+from antivirus.quarantine_manager import QuarantineManager
+from antivirus.logger import Logger
 from database.hash_db import HashDB
+from dotenv import load_dotenv
 
-# DUDAS
-# vt_client: Es el objeto que usamos para conectarnos a VirusTotal
-# vt.Client: Es la clase que proporciona VirusTotal para crear ese cliente
-# hexdigest(): Convierte un hash (que es binario) a un texto legible con letras y números
-# self.vt_client.get_object(...): Con esta función le pedimos a VirusTotal información sobre un archivo (por su hash). Nos devuelve un “informe” con estadísticas sobre ese archivo.
-# report.last_analysis_stats.get("malicious", 0): Accede al informe que devuelve VirusTotal y busca cuántos antivirus detectaron ese archivo como peligroso. Si no encuentra el dato, devuelve 0.
-# os.path.basename(archivo): Saca solo el nombre del archivo, sin la ruta. Por ejemplo, si el archivo está en C:/algo/malware.exe, esto devuelve solo malware.exe.
-# os.path.join(...): Une correctamente partes de rutas del sistema operativo. Así se forma una ruta válida como cuarentena/malware.exe, sin errores por las barras (/, \).
-# for raiz, _, archivos in os.walk(directorio): : Recorre todas las carpetas y subcarpetas dentro del directorio que queremos escanear. archivos contiene la lista de archivos en cada carpeta
-# for proceso in self.wmi_client.Win32_Process.watch_for("creation"): : Espera a que se cree un nuevo proceso en el sistema. En cuanto eso pasa, el antivirus puede analizarlo en tiempo real.
-# ruta = proceso.ExecutablePath: Obtiene la ruta completa del archivo ejecutable que inició el proceso.
-# is_admin = os.name == 'nt' and ctypes.windll.shell32.IsUserAnAdmin(): Comprueba si el programa se está ejecutando como administrador en Windows.
-# os.chmod(path, stat.S_IREAD): Cambia los permisos de una carpeta o archivo para que sea solo de lectura.
-# mostrar_func=None: si al crear el obj no le paso un argumento para mostrar_func su valor sera none
-
+load_dotenv() # Carga las variables de entorno desde un archivo .env
 
 class Antivirus:
     def __init__(self, mostrar_func=None):
@@ -42,15 +29,16 @@ class Antivirus:
         self.logger = Logger()
         self.hash_analyzer = HashAnalyzer()
         self.heuristic = HeuristicAnalyzer()
-        self.virustotal = VirusTotalScanner("6370218ae16f433996cf763f16ae4b5227cf7b7a14e1ce196bb96acfcc6b65d4")
+        self.virustotal = VirusTotalScanner("API_KEY")
         self.quarantine = QuarantineManager()
-        self.db = HashDB()
+        self.hash_db = HashDB()
         self.wmi_client = wmi.WMI()
         self.archivo_ignorados = "ignorados.json"
         self.cargar_ignorados()
+        self.detener = False # Para detener los escaneos
 
     def log(self, mensaje):
-        self.log_func(mensaje)
+        self.mostrar_func(mensaje)
 
     def guardar_ignorados(self):
         """
@@ -105,7 +93,7 @@ class Antivirus:
             self.log("2. ❌ Eliminar archivo")
             self.log("3. ✅ Ignorar (no volver a detectar este archivo)")
 
-            opcion = input("Selecciona una opción (1, 2 o 3): ").strip()
+            opcion = input("Selecciona una opción (1, 2 o 3): ").strip() # strip = trim
 
             if opcion == "1":
                 self.quarantine.mover_a_cuarentena(archivo)
@@ -135,8 +123,14 @@ class Antivirus:
         Esto es útil para hacer escaneos completos.
         """
         self.log(f"🔍 Escaneando el directorio: {directorio}")
-        for raiz, _, archivos in os.walk(directorio):
+        for raiz, _, archivos in os.walk(directorio): # Recorre recursivamente todos los subdirectorios
+            if self.detener:
+                self.log(f"⛔ Escaneo detenido en el directorio: {raiz}")
+                return # corta el escaneo
             for archivo in archivos:
+                if self.detener:
+                    self.log(f"⛔ Escaneo detenido al procesar el archivo: {archivo}")
+                    return
                 ruta_completa = os.path.join(raiz, archivo)
                 self.analizar_archivo(ruta_completa)
 
@@ -173,19 +167,26 @@ class Antivirus:
         """
         self.mostrar_func("Iniciando escaneo rápido...")
         rutas_comunes = [
-            os.path.expanduser("~/Escritorio"),
-            os.path.expanduser("~/Descargas"),
-            os.path.expanduser("~/Documentos"),
+            os.path.expanduser("~\Desktop"),
+            os.path.expanduser("~\Downloads"),
+            os.path.expanduser("~\Documents"),
             os.environ.get("TEMP", ""),
             os.path.expandvars(r"%APPDATA%"),
         ]
 
         self.log("Inicio de escaneo rápido")
         for ruta in rutas_comunes:
+            if self.detener:
+                self.mostrar_func("⛔ Se ha detenido el escaneo rápido.")
+                self.log("Escaneo rápido detenido.")
+                return
+
             if ruta and os.path.exists(ruta):
                 self.analizar_directorio(ruta)
             else:
                 self.log(f"⚠️ Ruta no válida o no encontrada: {ruta}")
+        self.mostrar_func("✅ Escaneo rápido finalizado.")
+        self.log("Fin de escaneo rápido")
 
     def escaneo_completo(self):
         """
@@ -198,4 +199,14 @@ class Antivirus:
             unidad = "/"  # UNIX/Linux
 
         self.log("Inicio de escaneo completo")
+        if not os.path.exists(unidad):
+            self.mostrar_func(f"Unidad no encontrada: {unidad}")
+
         self.analizar_directorio(unidad)
+        if self.detener:
+            self.mostrar_func("⛔ Se ha detenido el escaneo rápido.")
+            self.log("Escaneo completo detenido")
+            return
+        else:
+            self.mostrar_func("✅ Escaneo completo finalizado.")
+            self.log("Fin de escaneo completo")

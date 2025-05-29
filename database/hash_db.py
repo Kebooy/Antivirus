@@ -21,9 +21,6 @@ class HashDB:
     def guardar_hash(self, hash_valor, ruta):
         """
         Guardo un hash malicioso si este no se encuentra en la base de datos
-        :param hash_valor:
-        :param ruta:
-        :return:
         """
         fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         try:
@@ -36,8 +33,6 @@ class HashDB:
     def es_malicioso(self, hash_valor):
         """
         Devuelve true si el hash se encuentra en la base de datos
-        :param hash_valor:
-        :return:
         """
         self.cursor.execute("SELECT 1 FROM hashes WHERE hash = ?", (hash_valor,))
         return self.cursor.fetchone() is not None
@@ -45,7 +40,6 @@ class HashDB:
     def obtener_todos(self):
         """
         Devuelve una lista de todos los hashes almacenados en la base de datos
-        :return:
         """
         self.cursor.execute("SELECT * FROM hashes")
         return self.cursor.fetchall()
@@ -53,6 +47,5 @@ class HashDB:
     def cerrar(self):
         """
         Cierra la conexión a la base de datos
-        :return:
         """
         self.conn.close()

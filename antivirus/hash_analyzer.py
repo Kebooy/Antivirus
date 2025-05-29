@@ -1,10 +1,23 @@
 import hashlib # Para calcular hashes
-import os # Operaciones con el sistema de archivos
-from logger import Logger
+from database.hash_db import HashDB
+from antivirus.logger import Logger
 
 class HashAnalyzer:
     def __init__(self):
         self.logger = Logger()
+        self.hash_db = HashDB()
+        self.hashes_maliciosos = self.hash_db.obtener_todos() # Carga los hashes maliciosos al iniciar
+
+    def _cargar_hashes_maliciosos(self):
+        """
+        Carga los hashes maliciosos desde la base de datos.
+        """
+        try:
+            registros = self.hash_db.obtener_todos()
+            return {fila[1] for fila in registros} # Extrae solo el hash de la columna 1
+        except Exception as e:
+            self.logger.log(f"Error al cargar hashes maliciosos: {e}")
+            return set() # Devuelvo un conjunto vacío en caso de error, así la app sigue funcionando
 
     def calcular_hash(self, archivo):
         """

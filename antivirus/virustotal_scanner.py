@@ -1,6 +1,6 @@
 import virustotal_python as vt # Biblioteca oficial de VirusTotal
 from virustotal_python import Virustotal
-from logger import Logger
+from antivirus.logger import Logger
 
 class VirusTotalScanner:
     def __init__(self, api_key):

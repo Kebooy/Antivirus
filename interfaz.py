@@ -61,6 +61,10 @@ class AntivirusGUI:
 
         self.construir_interfaz()
         self.antivirus.comprobar_privilegios()
+
+        if self.antivirus.escaneo_pendiente:
+            self.btn_reanudar.config(state="normal")
+
         self.root.protocol("WM_DELETE_WINDOW", self.cerrar)
 
     def construir_interfaz(self):
@@ -121,6 +125,11 @@ class AntivirusGUI:
                                   command=self.detener_escaneo, state="disabled")
         self.btn_detener.pack(side=LEFT, padx=10)
 
+        self.btn_reanudar = Button(botones, text="Reanudar escaneo", bootstyle="secondary", width=20,
+                                   command=self.hilo_reanudar_escaneo)
+        self.btn_reanudar.pack(side=LEFT, padx=10)
+        self.btn_reanudar.config(state="disabled") # por defecto
+
 
         salida_frame = Frame(self.frame_escaneos)
         salida_frame.pack(fill=BOTH, expand=YES)
@@ -179,6 +188,7 @@ class AntivirusGUI:
         self.btn_rapido.config(state="normal")
         self.btn_completo.config(state="normal")
         self.btn_detener.config(state="normal")
+        self.btn_reanudar.config(state="disabled")
 
     def _escanear_rapido(self):
         self.antivirus.escaneo_rapido()
@@ -235,6 +245,19 @@ class AntivirusGUI:
             self.preparar_escaneo('completo')
             threading.Thread(target=self._escanear_completo, daemon=True).start()
 
+    def hilo_reanudar_escaneo(self):
+        self.preparar_escaneo(self.antivirus.tipo_escaneo)
+        threading.Thread(target=self._reanudar_escaneo, daemon=True).start()
+
+    def _reanudar_escaneo(self):
+        if self.antivirus.tipo_escaneo == "rapido":
+            self.antivirus.escaneo_rapido(reanudar=True)
+        elif self.antivirus.tipo_escaneo == "completo":
+            self.antivirus.escaneo_completo(reanudar=True)
+        else:
+            self.mostrar("⚠️ No hay escaneo pendiente para reanudar.")
+        self.finalizar_escaneo()
+
     def cambiar_tema(self):
         if self.current_theme == 'litera':
             self.current_theme = 'darkly'
@@ -284,4 +307,7 @@ class AntivirusGUI:
             self.mostrar_config()
 
     def cerrar(self):
+        if not self.antivirus.detener:
+            self.antivirus.limpiar_estado_escaneo()
         self.root.destroy()
+

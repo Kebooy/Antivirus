@@ -1,7 +1,7 @@
 from ttkbootstrap import Style, Frame, Label, Button, ScrolledText, Treeview
 from ttkbootstrap.constants import *
 from antivirus.antivirus import Antivirus
-from tkinter import messagebox
+from tkinter import messagebox, Toplevel
 import threading
 
 
@@ -61,9 +61,6 @@ class AntivirusGUI:
 
         self.construir_interfaz()
         self.antivirus.comprobar_privilegios()
-
-        if self.antivirus.escaneo_pendiente:
-            self.btn_reanudar.config(state="normal")
 
         self.root.protocol("WM_DELETE_WINDOW", self.cerrar)
 
@@ -125,12 +122,6 @@ class AntivirusGUI:
                                   command=self.detener_escaneo, state="disabled")
         self.btn_detener.pack(side=LEFT, padx=10)
 
-        self.btn_reanudar = Button(botones, text="Reanudar escaneo", bootstyle="secondary", width=20,
-                                   command=self.hilo_reanudar_escaneo)
-        self.btn_reanudar.pack(side=LEFT, padx=10)
-        self.btn_reanudar.config(state="disabled") # por defecto
-
-
         salida_frame = Frame(self.frame_escaneos)
         salida_frame.pack(fill=BOTH, expand=YES)
 
@@ -182,13 +173,12 @@ class AntivirusGUI:
             self.btn_rapido.config(state="normal")
             self.btn_completo.config(state="normal")
 
-        self.text_area.delete(1.0, "end")  # Limpiar área de salida
+        self.text_area.delete(1.0, "end") # Limpiar área de salida
 
     def finalizar_escaneo(self):
         self.btn_rapido.config(state="normal")
         self.btn_completo.config(state="normal")
         self.btn_detener.config(state="normal")
-        self.btn_reanudar.config(state="disabled")
 
     def _escanear_rapido(self):
         self.antivirus.escaneo_rapido()
@@ -245,19 +235,6 @@ class AntivirusGUI:
             self.preparar_escaneo('completo')
             threading.Thread(target=self._escanear_completo, daemon=True).start()
 
-    def hilo_reanudar_escaneo(self):
-        self.preparar_escaneo(self.antivirus.tipo_escaneo)
-        threading.Thread(target=self._reanudar_escaneo, daemon=True).start()
-
-    def _reanudar_escaneo(self):
-        if self.antivirus.tipo_escaneo == "rapido":
-            self.antivirus.escaneo_rapido(reanudar=True)
-        elif self.antivirus.tipo_escaneo == "completo":
-            self.antivirus.escaneo_completo(reanudar=True)
-        else:
-            self.mostrar("⚠️ No hay escaneo pendiente para reanudar.")
-        self.finalizar_escaneo()
-
     def cambiar_tema(self):
         if self.current_theme == 'litera':
             self.current_theme = 'darkly'
@@ -305,6 +282,75 @@ class AntivirusGUI:
             self.mostrar_hashes()
         elif self.frame_config.winfo_ismapped():
             self.mostrar_config()
+
+    def ventana_opciones_amenaza(self, archivo, amenaza):
+        ventana = Toplevel(self.root)
+        ventana.title("Alerta de Antivirus")
+        ventana.geometry("460x180")
+        ventana.resizable(False, False)
+        ventana.grab_set()  # Modal: evita interacción con ventana principal
+
+        from ttkbootstrap import Label as TbLabel, Button as TbButton
+        label = TbLabel(ventana, text=f"Se ha detectado una amenaza por {amenaza}.\n¿Qué deseas hacer con:\n{archivo}?",
+                        wraplength=440, justify="left")
+        label.pack(padx=10, pady=15)
+
+        resultado = {"opcion": None}
+
+        def opcion1():
+            resultado["opcion"] = "1"
+            ventana.destroy()
+
+        def opcion2():
+            resultado["opcion"] = "2"
+            ventana.destroy()
+
+        def opcion3():
+            resultado["opcion"] = "3"
+            ventana.destroy()
+
+        frame_botones = Frame(ventana)
+        frame_botones.pack(pady=10)
+
+        btn1 = TbButton(frame_botones, text="🛑 Mover a cuarentena", width=18, command=opcion1)
+        btn1.grid(row=0, column=0, padx=5)
+
+        btn2 = TbButton(frame_botones, text="❌ Eliminar archivo", width=18, command=opcion2)
+        btn2.grid(row=0, column=1, padx=5)
+
+        btn3 = TbButton(frame_botones, text="✅ Ignorar archivo", width=18, command=opcion3)
+        btn3.grid(row=0, column=2, padx=5)
+
+        ventana.wait_window()
+        return resultado["opcion"]
+
+    def mostrar_opciones_amenaza(self, archivo, accion_requerida):
+        opcion = self.ventana_opciones_amenaza(archivo, accion_requerida)
+
+        if opcion == "1":
+            self.antivirus.quarantine.mover_a_cuarentena(archivo)
+            self.antivirus.quarantine.proteger_directorio(self.antivirus.quarantine.carpeta)
+            self.antivirus.logger.registrar_log(archivo, accion_requerida, "cuarentena")
+            self.mostrar(f"🛑 Archivo movido a cuarentena: {archivo}")
+
+        elif opcion == "2":
+            import os
+            try:
+                os.remove(archivo)
+                self.mostrar(f"❌ Archivo eliminado: {archivo}")
+                self.antivirus.logger.registrar_log(archivo, accion_requerida, "eliminado")
+            except Exception as e:
+                self.mostrar(f"Error al eliminar archivo: {e}")
+
+        elif opcion == "3":
+            hash_archivo = self.antivirus.hash_analyzer.calcular_hash(archivo)
+            self.antivirus.virus_ignorados.add(hash_archivo)
+            self.antivirus.guardar_ignorados()
+            self.mostrar(f"🟢 El archivo ha sido ignorado. No se volverá a marcar como amenaza.")
+            self.antivirus.logger.registrar_log(archivo, accion_requerida, "ignorado")
+
+        else:
+            self.mostrar("⚠️ Opción no válida. No se realizó ninguna acción.")
 
     def cerrar(self):
         if not self.antivirus.detener:

@@ -6,11 +6,7 @@ class Logger:
 
     def registrar_log(self, ruta_archivo, tipo_deteccion, accion):
         """
-        Registra eventos relacionados con acciones del antivirus sobre archivos.
-        :param ruta_archivo:
-        :param tipo_deteccion:
-        :param accion:
-        :return:
+        Registra eventos relacionados con acciones del antivirus sobre archivos
         """
         try:
             fecha_hora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -21,9 +17,7 @@ class Logger:
 
     def log(self, mensaje):
         """
-        Método genérico para registrar cualquier mensaje en el log, añadiendo la fecha y hora.
-        :param mensaje:
-        :return:
+        Método genérico para registrar cualquier mensaje en el log, añadiendo la fecha y hora
         """
         fecha_hora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         linea = f"[{fecha_hora}] {mensaje}"

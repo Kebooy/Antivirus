@@ -1,5 +1,3 @@
-import concurrent
-
 import wmi      # Para interactuar con WMI en Windows
 import os       # Operaciones con el sistema de archivos
 import ctypes   # Para comprobar privilegios de administrador en Windows
@@ -13,7 +11,7 @@ from antivirus.logger import Logger
 from database.hash_db import HashDB
 from dotenv import load_dotenv
 
-load_dotenv() # Carga las variables de entorno desde un archivo .env
+load_dotenv() # Cargo las variables de entorno
 
 class Antivirus:
     def __init__(self, mostrar_func=None):
@@ -28,21 +26,25 @@ class Antivirus:
             self.mostrar_func = print
         else:
             self.mostrar_func = mostrar_func
+
         self.logger = Logger()
         self.hash_analyzer = HashAnalyzer()
         self.heuristic = HeuristicAnalyzer()
-        self.virustotal = VirusTotalScanner("API_KEY")
+
+        api_key = os.getenv("API_KEY")
+        if not api_key or len(api_key) < 32:
+            raise ValueError("❌ API_KEY de VirusTotal no válida o no encontrada en el archivo .env")
+
+        self.virustotal = VirusTotalScanner(api_key)
         self.quarantine = QuarantineManager()
         self.hash_db = HashDB()
         self.wmi_client = wmi.WMI()
 
-        # Para almacenar los hashes de virus ignorados
         self.archivo_ignorados = "ignorados.json"
         self.cargar_ignorados()
 
-        self.detener = False # Para detener los escaneos
+        self.detener = False
 
-        # Para reanudar los escaneos
         self.estado_guardado = "estado_escaneo.json"
         self.escaneo_pendiente = None
         self.ultima_ruta = None
@@ -124,63 +126,50 @@ class Antivirus:
             accion_requerida = "virustotal"
 
         if accion_requerida:
-            self.log(f"\n🔎 Se ha detectado una amenaza por {accion_requerida}. ¿Qué deseas hacer con '{archivo}'?")
-            self.log("1. 🛑 Mover a cuarentena")
-            self.log("2. ❌ Eliminar archivo")
-            self.log("3. ✅ Ignorar (no volver a detectar este archivo)")
-
-            opcion = input("Selecciona una opción (1, 2 o 3): ").strip() # strip = trim
-
-            if opcion == "1":
-                self.quarantine.mover_a_cuarentena(archivo)
-                self.quarantine.proteger_directorio(self.quarantine.carpeta)
-                self.logger.registrar_log(archivo, accion_requerida, "cuarentena")
-            elif opcion == "2":
-                try:
-                    os.remove(archivo)
-                    self.log(f"❌ Archivo eliminado: {archivo}")
-                    self.logger.registrar_log(archivo, accion_requerida, "eliminado")
-                except Exception as e:
-                    self.log(f"Error al eliminar archivo: {e}")
-            elif opcion == "3":
-                self.virus_ignorados.add(hash_archivo)
-                self.guardar_ignorados()
-                self.log(f"🟢 El archivo ha sido ignorado. No se volverá a marcar como amenaza.")
-                self.logger.registrar_log(archivo, accion_requerida, "ignorado")
-
-            else:
-                self.log("⚠️ Opción no válida. No se realizó ninguna acción.")
+            def lanzar_ventana():
+                opcion = self.mostrar_func(archivo, accion_requerida)
+                self.procesar_opcion(opcion, archivo, accion_requerida)
         else:
             self.log(f"✅ {archivo} parece seguro.")
 
-    def analizar_directorio(self, directorio, reanudar_desde=None, max_hilos=8): # Lo escaneo desde el inicio o desde un punto específico
+    def analizar_directorio(self, directorio):
         """
         Recorre un directorio y analiza todos los archivos que contiene.
         Esto es útil para hacer escaneos completos.
         """
         self.log(f"🔍 Escaneando el directorio: {directorio}")
-        continuar = not reanudar_desde # Si no se pasa reanudar_desde, se empieza desde el principio
+        for raiz, _, archivos in os.walk(directorio): # Recorre recursivamente todos los subdirectorios
+            if self.detener:
+                self.log(f"⛔ Escaneo detenido en el directorio: {raiz}")
+                return # corta el escaneo
+            for archivo in archivos:
+                if self.detener:
+                    self.log(f"⛔ Escaneo detenido al procesar el archivo: {archivo}")
+                    return
+                ruta_completa = os.path.join(raiz, archivo)
+                self.analizar_archivo(ruta_completa)
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=max_hilos) as executor:
-            for raiz, _, archivos in os.walk(directorio): # Recorre recursivamente
-                for archivo in archivos:
-                    ruta_completa = os.path.join(raiz, archivo)
-
-                    if not continuar:
-                        if ruta_completa == reanudar_desde:
-                            continuar = True
-                        else:
-                            continue # Todavía no llegamos al archivo desde donde reanudar
-
-                    if self.detener:
-                        self.log(f"⛔ Escaneo detenido en: {ruta_completa}")
-                        self.guardar_estado_escaneo(self.tipo_escaneo, ruta_completa)
-                        return # Detiene el escaneo
-
-                    executor.submit(self.analizar_archivo, ruta_completa)
-                    self.analizar_archivo(ruta_completa)
-
-        self.log(f" Escaneo del directorio: {directorio} finalizado.")
+    def procesar_opcion(self, opcion, archivo, accion_requerida):
+        if opcion == "1":
+            self.quarantine.mover_a_cuarentena(archivo)
+            self.quarantine.proteger_directorio(self.quarantine.carpeta)
+            self.logger.registrar_log(archivo, accion_requerida, "cuarentena")
+            self.mostrar_func(f"🛑 Archivo movido a cuarentena: {archivo}")
+        elif opcion == "2":
+            try:
+                os.remove(archivo)
+                self.mostrar_func(f"❌ Archivo eliminado: {archivo}")
+                self.logger.registrar_log(archivo, accion_requerida, "eliminado")
+            except Exception as e:
+                self.mostrar_func(f"Error al eliminar archivo: {e}")
+        elif opcion == "3":
+            hash_archivo = self.hash_analyzer.calcular_hash(archivo)
+            self.virus_ignorados.add(hash_archivo)
+            self.guardar_ignorados()
+            self.mostrar_func("🟢 El archivo ha sido ignorado. No se volverá a marcar como amenaza.")
+            self.logger.registrar_log(archivo, accion_requerida, "ignorado")
+        else:
+            self.mostrar_func("⚠️ Opción no válida. No se realizó ninguna acción.")
 
     def monitorear_procesos(self):
         """
@@ -209,40 +198,34 @@ class Antivirus:
             self.log("⚠️ No se ha podido comprobar el nivel de privilegios.")
             return False
 
-    def escaneo_rapido(self, reanudar=False):
+    def escaneo_rapido(self):
         """
         Realiza un escaneo rápido solo en directorios comunes donde suele ocultarse el malware.
         """
         self.mostrar_func("Iniciando escaneo rápido...")
         rutas_comunes = [
-            os.path.expanduser("~\\Desktop"),
-            os.path.expanduser("~\\Downloads"),
-            os.path.expanduser("~\\Documents"),
+            os.path.expanduser("~\Desktop"),
+            os.path.expanduser("~\Downloads"),
+            os.path.expanduser("~\Documents"),
             os.environ.get("TEMP", ""),
             os.path.expandvars(r"%APPDATA%"),
         ]
-        self.tipo_escaneo = "rapido"
+
         self.log("Inicio de escaneo rápido")
-
         for ruta in rutas_comunes:
-
             if self.detener:
                 self.mostrar_func("⛔ Se ha detenido el escaneo rápido.")
                 self.log("Escaneo rápido detenido.")
                 return
 
             if ruta and os.path.exists(ruta):
-                self.analizar_directorio(ruta, reanudar_desde=self.ultima_ruta if reanudar else None, max_hilos=2)
-                self.ultima_ruta = None  # solo una vez
+                self.analizar_directorio(ruta)
             else:
-                self.mostrar_func(f"⚠️ Ruta no encontrada: {ruta}")
-                self.log(f"No se ha encontrado la ruta {ruta}")
-
-        self.limpiar_estado_escaneo()
+                self.log(f"⚠️ Ruta no válida o no encontrada: {ruta}")
         self.mostrar_func("✅ Escaneo rápido finalizado.")
         self.log("Fin de escaneo rápido")
 
-    def escaneo_completo(self, reanudar=False):
+    def escaneo_completo(self):
         """
         Realiza un escaneo completo del sistema recorriendo todo el disco.
         """
@@ -255,13 +238,6 @@ class Antivirus:
         self.log("Inicio de escaneo completo")
         if not os.path.exists(unidad):
             self.mostrar_func(f"Unidad no encontrada: {unidad}")
-            self.log(f"Unidad: {unidad} no encontrada")
-            return
-
-        reanudar_desde = self.cargar_estado_escaneo("completo") if reanudar else None
-        self.analizar_directorio(unidad, reanudar_desde=reanudar_desde)
-
-        self.analizar_directorio(unidad, reanudar_desde=reanudar_desde, max_hilos=8)
 
         self.analizar_directorio(unidad)
         if self.detener:

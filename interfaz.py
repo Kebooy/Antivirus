@@ -13,7 +13,7 @@ class AntivirusGUI:
 
         # Inicializar estilo (tema)
         self.style = Style(theme='darkly')  # tema oscuro por defecto
-        self.current_theme = 'darkly'  # 'litera' (claro) o 'darkly' (oscuro)
+        self.current_theme = 'darkly' # 'litera' (claro) o 'darkly' (oscuro)
 
         # Diccionario idiomas (solo textos usados en UI)
         self.texts = {
@@ -57,7 +57,7 @@ class AntivirusGUI:
 
         self.current_lang = 'es'
 
-        self.antivirus = Antivirus(mostrar_func=self.mostrar)
+        self.antivirus = Antivirus(mostrar_func=self.mostrar, gui=self)
 
         self.construir_interfaz()
         self.antivirus.comprobar_privilegios()
@@ -182,14 +182,10 @@ class AntivirusGUI:
 
     def _escanear_rapido(self):
         self.antivirus.escaneo_rapido()
-        if self.antivirus.detener:
-            messagebox.showinfo(self.texts[self.current_lang]['titulo'], "Escaneo detenido.")
         self.finalizar_escaneo()
 
     def _escanear_completo(self):
         self.antivirus.escaneo_completo()
-        if self.antivirus.detener:
-            messagebox.showinfo(self.texts[self.current_lang]['titulo'], "Escaneo detenido.")
         self.finalizar_escaneo()
 
     def detener_escaneo(self):

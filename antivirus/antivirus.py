@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv() # Cargo las variables de entorno
 
 class Antivirus:
-    def __init__(self, mostrar_func=None):
+    def __init__(self, mostrar_func=None, gui=None):
         """
         Inicializa la clase Antivirus.
         - Configura la clave API de VirusTotal.
@@ -30,6 +30,11 @@ class Antivirus:
         self.logger = Logger()
         self.hash_analyzer = HashAnalyzer()
         self.heuristic = HeuristicAnalyzer()
+        self.gui = gui
+        if gui:
+            self.root = gui.root # guardar referencia a la ventana principal
+        else:
+            self.root = None
 
         api_key = os.getenv("API_KEY")
         if not api_key or len(api_key) < 32:
@@ -109,28 +114,43 @@ class Antivirus:
         - Luego realiza un análisis heurístico buscando patrones sospechosos.
         - Finalmente, consulta VirusTotal para obtener más información.
         """
-        hash_archivo = self.hash_analyzer.calcular_hash(archivo)
-        if not hash_archivo or hash_archivo in self.virus_ignorados:
-            return
 
-        accion_requerida = None
+        try:
+            hash_archivo = self.hash_analyzer.calcular_hash(archivo)
+            if not hash_archivo:
+                self.log(f"❌ No se pudo calcular hash para: {archivo}")
+                return
 
-        if hash_archivo in self.hash_analyzer.hashes_maliciosos:
-            self.log(f"⚠️ ¡ALERTA! {archivo} es un malware conocido localmente")
-            accion_requerida = "local"
-        elif self.heuristic.heuristica_archivo(archivo):
-            self.log(f"⚠️ ¡ALERTA! {archivo} muestra comportamiento sospechoso por heurística")
-            accion_requerida = "heurística"
-        elif self.virustotal.consultar_virustotal(hash_archivo):
-            self.log(f"⚠️ ¡ALERTA! {archivo} detectado como malicioso por VirusTotal")
-            accion_requerida = "virustotal"
+            if hash_archivo in self.virus_ignorados:
+                self.log(f"🔇 Archivo ignorado: {archivo}")
+                return
 
-        if accion_requerida:
-            def lanzar_ventana():
-                opcion = self.mostrar_func(archivo, accion_requerida)
-                self.procesar_opcion(opcion, archivo, accion_requerida)
-        else:
-            self.log(f"✅ {archivo} parece seguro.")
+            accion_requerida = None
+
+            # Verificaciones de malware
+            if hash_archivo in self.hash_analyzer.hashes_maliciosos:
+                self.log(f"⚠️ ¡ALERTA! {archivo} es un malware conocido localmente")
+                accion_requerida = "local"
+            elif self.heuristic.heuristica_archivo(archivo):
+                self.log(f"⚠️ ¡ALERTA! {archivo} muestra comportamiento sospechoso por heurística")
+                accion_requerida = "heurística"
+            elif self.virustotal.consultar_virustotal(hash_archivo):
+                self.log(f"⚠️ ¡ALERTA! {archivo} detectado como malicioso por VirusTotal")
+                accion_requerida = "virustotal"
+            else:
+                self.log(f"✅ {archivo} parece seguro")
+
+            # Mostrar ventana de opciones si se detectó algo
+            if accion_requerida and self.gui:
+                self.root.after(0, lambda: self.procesar_opcion_con_gui(archivo, accion_requerida))
+
+        except Exception as e:
+            self.log(f"❌ Error al analizar {archivo}: {str(e)}")
+
+    def procesar_opcion_con_gui(self, archivo, accion_requerida):
+        """Método auxiliar para manejar la GUI en el hilo principal"""
+        opcion = self.gui.ventana_opciones_amenaza(archivo, accion_requerida)
+        self.procesar_opcion(opcion, archivo, accion_requerida)
 
     def analizar_directorio(self, directorio):
         """

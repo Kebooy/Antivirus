@@ -783,3 +783,574 @@
 [2025-06-15 19:39:12] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
 [2025-06-15 19:39:12] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
 [2025-06-15 19:39:13] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:08:30] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 20:08:30] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 20:08:30] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 20:08:30] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 20:08:30] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 20:08:31] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5168be81ffd8211e837e5dff2bd1a076ba1239308c24e96b96b93c40e4e6fb0a" not found
+[2025-06-15 20:08:32] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cf79d4da1e4dcd2c6d1461802fed9f0d92a1e6e4b83f5197ad488b0171ce6872" not found
+[2025-06-15 20:08:32] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "08705ea68861fa942b49126e9be2b593861e6ef35dd22c6af4fce4d97572b48c" not found
+[2025-06-15 20:08:33] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "011cf4afd66cdccd50c1db28f015392906b67f9ec7af27f8ec5a614fa98eb314" not found
+[2025-06-15 20:08:34] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "66cf726f0ff93affe63ab2433aadf682e34d7372af59db7c04da8f9e9e6c362f" not found
+[2025-06-15 20:08:34] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "269e5a84023661f7f283443295f21c29d6dd5ad039d8d4e2d4162b2bb7a49d7f" not found
+[2025-06-15 20:08:35] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "3a1f6217ca8151f10cc247639f3b4c5dfb643e4adc07cd3236b90a6e538d93ab" not found
+[2025-06-15 20:08:35] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "025a8c45f2192358cab064c346cd4caaa5492d973179c973c5ff05fb5be2a7d1" not found
+[2025-06-15 20:08:35] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:08:36] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:08:36] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:08:37] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:08:37] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:36] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 20:15:36] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 20:15:36] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 20:15:36] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 20:15:36] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 20:15:37] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5168be81ffd8211e837e5dff2bd1a076ba1239308c24e96b96b93c40e4e6fb0a" not found
+[2025-06-15 20:15:37] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cf79d4da1e4dcd2c6d1461802fed9f0d92a1e6e4b83f5197ad488b0171ce6872" not found
+[2025-06-15 20:15:38] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "08705ea68861fa942b49126e9be2b593861e6ef35dd22c6af4fce4d97572b48c" not found
+[2025-06-15 20:15:38] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "011cf4afd66cdccd50c1db28f015392906b67f9ec7af27f8ec5a614fa98eb314" not found
+[2025-06-15 20:15:39] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "66cf726f0ff93affe63ab2433aadf682e34d7372af59db7c04da8f9e9e6c362f" not found
+[2025-06-15 20:15:39] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "269e5a84023661f7f283443295f21c29d6dd5ad039d8d4e2d4162b2bb7a49d7f" not found
+[2025-06-15 20:15:39] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "3a1f6217ca8151f10cc247639f3b4c5dfb643e4adc07cd3236b90a6e538d93ab" not found
+[2025-06-15 20:15:40] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "025a8c45f2192358cab064c346cd4caaa5492d973179c973c5ff05fb5be2a7d1" not found
+[2025-06-15 20:15:41] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:43] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:43] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:43] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:44] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:46] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:46] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:47] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "9d0eb58838c05802040e4caab648a30d10cf14f10a7b89a3c1505357e9c3678e" not found
+[2025-06-15 20:15:48] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:48] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:49] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:49] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "7051d0dcbb1f5330ec08378ab15ed8b0d783ea9b29355de5886aa333c3c62db7" not found
+[2025-06-15 20:15:50] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:50] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:51] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:51] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:52] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:52] C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe | Detecci�n: heur�stica | Acci�n: ignorado
+[2025-06-15 20:15:52] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:53] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "bdc9f92a3e656ee9563968a523eb19503ab8cf8bcdc95ef01bbffc6daf97e138" not found
+[2025-06-15 20:15:54] C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.dll | Detecci�n: heur�stica | Acci�n: ignorado
+[2025-06-15 20:15:54] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:55] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:56] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:56] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:57] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:57] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:58] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:58] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:59] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:59] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:15:59] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:00] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:01] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:01] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:02] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:02] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:03] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:03] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:04] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:04] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:05] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:05] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:06] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:06] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:07] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:08] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:08] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:09] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "504eeaba1e8438a4b2c27ec5ab1e04f5102a8bfa5953e649903f57317f298840" not found
+[2025-06-15 20:16:09] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cfb1d45a7f014d2378bafb7a64acf1c1cb377cf0d52c54125afc95c381d90aaf" not found
+[2025-06-15 20:16:10] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "2fffacf486cde3192cb6e6d00dd47208e7418e17a6456c16e8c316c6d5798da6" not found
+[2025-06-15 20:16:10] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "7fac252db439f9ae9f379dd3bfae9f814fa84b4e8a5f5ada6214a412586af2fe" not found
+[2025-06-15 20:16:11] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:16:11] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "c50e48b9b75d8373deeb2c2eb39d9e98b57809bb073c4d19ad503606deb7367d" not found
+[2025-06-15 20:16:12] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "05bd3d1020fd534e4a095565bfc5bb7e31cc98d0c881a667fa01c81504986c49" not found
+[2025-06-15 20:17:46] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:17:46] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cc285d9417e986b8ab257a600d9cd593f8b1295d117597e5843ec6a3b829550d" not found
+[2025-06-15 20:17:46] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "8055a0c9ec88ac3904133b0e02e0ee86c59f19cacb3aaddf98ece091314d24b0" not found
+[2025-06-15 20:17:47] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "d36409e3aa0256d8e7cfb498631885de56ceb368f37821d38bf4b75c066c223b" not found
+[2025-06-15 20:17:47] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "f8bcc00a7533646a946c1b4364345dd6bac42e93290194111cf54881d542284c" not found
+[2025-06-15 20:17:48] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "4fdaca5c873f3302999560546ff224ba49742c741a64390490837306c4edf1ee" not found
+[2025-06-15 20:17:48] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "2be891f8cfcd589f08b2b4d90e5ac2c095dd634acbf093c2c81d4e7cb0a15708" not found
+[2025-06-15 20:17:48] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "864decc2bd77d0625570bb1c5f0ac62dffbfc1328fc00ab09cb2f7d921099c00" not found
+[2025-06-15 20:17:49] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "c2eacac5a451b84befbf29da5380ff5403417bca9fc57117fbe48d52eb5a850b" not found
+[2025-06-15 20:17:49] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "507c8168ea860e022c906c7a531881b8f3cbb4a976612a8f759b24fe2b1c9032" not found
+[2025-06-15 20:17:50] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "92f0228b7bf25ce89199449c668ae1c753ab6384a598fa3c66dec90cd6c5335a" not found
+[2025-06-15 20:17:50] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "3247ddb641ccc49a5d96b70223456ac5d8b2e54e913d82586c0a2351b746437c" not found
+[2025-06-15 20:17:51] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "29e84c4e7a4d00002f9f1a268c4cdd057e6d8adb2c58fd0c8ed86c024e29b67c" not found
+[2025-06-15 20:17:51] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cab04561e6ae489c6fec24344a0d0a8443e1546ef481ba1acdcdc812ee5787f7" not found
+[2025-06-15 20:17:51] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "24d0b48e952899cfc18d9a8406b83f8fc576e65010d3d336843a17d2018a3385" not found
+[2025-06-15 20:17:52] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "067a7dc61cee9a84d0fda52e1c2d0f19683dcf5a40573a0a1554767858dd107f" not found
+[2025-06-15 20:17:52] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "a30590b012935a682c547cfad8e14320b7fec969237fb12717b0734dd8778294" not found
+[2025-06-15 20:17:53] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "c47b65e2d6bfbc4aae7c6dc1ed725493ea20ae0403b60f7fa721349a9dd70c80" not found
+[2025-06-15 20:17:53] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5caa229b76cfdce08433b2507c400fc2b2f004472638705b14406d88827bdb37" not found
+[2025-06-15 20:17:56] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 20:17:56] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 20:17:56] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 20:17:56] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 20:17:56] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 20:17:57] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5168be81ffd8211e837e5dff2bd1a076ba1239308c24e96b96b93c40e4e6fb0a" not found
+[2025-06-15 20:17:58] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cf79d4da1e4dcd2c6d1461802fed9f0d92a1e6e4b83f5197ad488b0171ce6872" not found
+[2025-06-15 20:17:59] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "08705ea68861fa942b49126e9be2b593861e6ef35dd22c6af4fce4d97572b48c" not found
+[2025-06-15 20:17:59] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "011cf4afd66cdccd50c1db28f015392906b67f9ec7af27f8ec5a614fa98eb314" not found
+[2025-06-15 20:18:00] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "66cf726f0ff93affe63ab2433aadf682e34d7372af59db7c04da8f9e9e6c362f" not found
+[2025-06-15 20:18:00] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "269e5a84023661f7f283443295f21c29d6dd5ad039d8d4e2d4162b2bb7a49d7f" not found
+[2025-06-15 20:18:01] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "3a1f6217ca8151f10cc247639f3b4c5dfb643e4adc07cd3236b90a6e538d93ab" not found
+[2025-06-15 20:18:01] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "025a8c45f2192358cab064c346cd4caaa5492d973179c973c5ff05fb5be2a7d1" not found
+[2025-06-15 20:18:02] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:18:02] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:18:03] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:18:03] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:18:03] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:18:04] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:18:05] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:18:06] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "9d0eb58838c05802040e4caab648a30d10cf14f10a7b89a3c1505357e9c3678e" not found
+[2025-06-15 20:18:07] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:25:12] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 20:25:12] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 20:25:12] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 20:25:12] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 20:25:12] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 20:25:12] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5168be81ffd8211e837e5dff2bd1a076ba1239308c24e96b96b93c40e4e6fb0a" not found
+[2025-06-15 20:25:49] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:34:15] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:34:29] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 20:34:29] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 20:34:29] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 20:34:29] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 20:34:29] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 20:34:29] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5168be81ffd8211e837e5dff2bd1a076ba1239308c24e96b96b93c40e4e6fb0a" not found
+[2025-06-15 20:39:10] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:46:24] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:46:25] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cc285d9417e986b8ab257a600d9cd593f8b1295d117597e5843ec6a3b829550d" not found
+[2025-06-15 20:46:25] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "8055a0c9ec88ac3904133b0e02e0ee86c59f19cacb3aaddf98ece091314d24b0" not found
+[2025-06-15 20:46:25] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "d36409e3aa0256d8e7cfb498631885de56ceb368f37821d38bf4b75c066c223b" not found
+[2025-06-15 20:46:26] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "f8bcc00a7533646a946c1b4364345dd6bac42e93290194111cf54881d542284c" not found
+[2025-06-15 20:46:27] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "4fdaca5c873f3302999560546ff224ba49742c741a64390490837306c4edf1ee" not found
+[2025-06-15 20:46:27] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "2be891f8cfcd589f08b2b4d90e5ac2c095dd634acbf093c2c81d4e7cb0a15708" not found
+[2025-06-15 20:46:27] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "864decc2bd77d0625570bb1c5f0ac62dffbfc1328fc00ab09cb2f7d921099c00" not found
+[2025-06-15 20:46:28] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "c2eacac5a451b84befbf29da5380ff5403417bca9fc57117fbe48d52eb5a850b" not found
+[2025-06-15 20:46:28] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "507c8168ea860e022c906c7a531881b8f3cbb4a976612a8f759b24fe2b1c9032" not found
+[2025-06-15 20:46:29] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "92f0228b7bf25ce89199449c668ae1c753ab6384a598fa3c66dec90cd6c5335a" not found
+[2025-06-15 20:46:29] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "3247ddb641ccc49a5d96b70223456ac5d8b2e54e913d82586c0a2351b746437c" not found
+[2025-06-15 20:46:30] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "29e84c4e7a4d00002f9f1a268c4cdd057e6d8adb2c58fd0c8ed86c024e29b67c" not found
+[2025-06-15 20:46:30] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cab04561e6ae489c6fec24344a0d0a8443e1546ef481ba1acdcdc812ee5787f7" not found
+[2025-06-15 20:46:31] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "24d0b48e952899cfc18d9a8406b83f8fc576e65010d3d336843a17d2018a3385" not found
+[2025-06-15 20:46:31] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "067a7dc61cee9a84d0fda52e1c2d0f19683dcf5a40573a0a1554767858dd107f" not found
+[2025-06-15 20:46:32] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "a30590b012935a682c547cfad8e14320b7fec969237fb12717b0734dd8778294" not found
+[2025-06-15 20:46:32] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "c47b65e2d6bfbc4aae7c6dc1ed725493ea20ae0403b60f7fa721349a9dd70c80" not found
+[2025-06-15 20:46:32] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5caa229b76cfdce08433b2507c400fc2b2f004472638705b14406d88827bdb37" not found
+[2025-06-15 20:46:33] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "c3baff3f8f484c41d505055f6d965f58686ca6d515511770ca0cdcc81979cfe6" not found
+[2025-06-15 20:46:33] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "6ae1c1cfef5b7254a5b7aade867c7fefbb87b75d47572b2b0910754237d41d8c" not found
+[2025-06-15 20:46:34] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "1de4bc0ac45c006c4eaa2b4399d2ecca0f9bc4ded5b3aa2800695948de115c72" not found
+[2025-06-15 20:46:34] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5b217ad916a10cf2de96db1a7258741275f53c2aaf19837e3e421adeccd566ae" not found
+[2025-06-15 20:46:35] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "a4ec2a14e2d34bc9b04061181449bd20a06e21e47a5a25841329a0937a8fb6fa" not found
+[2025-06-15 20:46:35] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "dea6340ea1e77f9d8c14b39faeda08da7bcc951b07e84952f1159fe19a1b84b5" not found
+[2025-06-15 20:46:36] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "be7800878def97d6c232305d6c80933be8619db79a94a392837a395105bf619d" not found
+[2025-06-15 20:46:36] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "330a19b1ccfb1a9534076da641e33a1278b9de3f3214c42db9fa87cd8ce278b4" not found
+[2025-06-15 20:46:37] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "fa1eb3f5eb889d5e46353f4e257d21e15f7a40ef9e37d80fdc0b96a02abe794f" not found
+[2025-06-15 20:46:37] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "a4cbdb37df40a6e8ce166b45d45f513637048f59bd96a449f91ed6de20bf1d75" not found
+[2025-06-15 20:46:37] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "75f961fd229b2f46db5d382be57da7341a5826197912eaac4e5ae8b4a9df5fad" not found
+[2025-06-15 20:46:38] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "dd01cc9b44d330685c3d68abc4bc82fb1011054b7e362bd6155ebcf159dd9897" not found
+[2025-06-15 20:46:38] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5c69f718397117c90cd41f6e1e4d58df15676a65be1bea7f00e1cdad476367a5" not found
+[2025-06-15 20:46:39] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "dfba40fdcb0f29bb0e94bf8e317f016d26eaa326cc15ff3ecdff44d6e1d4597c" not found
+[2025-06-15 20:46:39] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "44c0159ba8d38b2d0ed1c647246b8e0a148765a5701ab16d0ee708c6fef0d4cc" not found
+[2025-06-15 20:46:39] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "c8fd54aa33e8ac9612eb1e02570890a6eb7c7998d2fcd8619e2c2d478a375ad0" not found
+[2025-06-15 20:46:40] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "1aed9b27fc0f9e88885483c65a0d5d699be808d63190bc3131df52526137d8c9" not found
+[2025-06-15 20:46:40] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "2b227dfe4664a2a302cdbafacceef8574d1495ee41cae5c75e1e45042263c732" not found
+[2025-06-15 20:46:41] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "d3d4c082c0e7f2c40a1ff6a1acc1d5f9bd9de50bee79a40ffa82fbba719e866e" not found
+[2025-06-15 20:46:42] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "b01de6e042a2dcf96d029373585f6c9cbace5a701d21e881f351b5a4084779f5" not found
+[2025-06-15 20:46:42] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "b4fb18cc5f10044704f4d364b0676c0d98b010d046573bd6f48cb1af850dec26" not found
+[2025-06-15 20:46:42] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "562950950148fc862e3e3ce6d17b4e98579a0343b0a4bf66b2cd5e64dca24315" not found
+[2025-06-15 20:46:43] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "7820d9442f2863a78fb5852c3c5529915302eb390e522c2a5454f7daaf2f8d9f" not found
+[2025-06-15 20:46:43] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cc5852d407b27f16ac8ec96270b9f7323428c30f2c583cec34880562db1644c3" not found
+[2025-06-15 20:46:44] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "2dbc15f803fa4343319788ddfc3e1125e7bee33ed955f42fff197de4784ca7c0" not found
+[2025-06-15 20:46:44] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "381e72b0ed86e726ce4079705fcb37f3cde12220fb87767f87141292e91c8af9" not found
+[2025-06-15 20:46:45] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "416b8817a9d78c33449332fe504b34c7c65e3436dcb418ab5064fb8f7e3e37a5" not found
+[2025-06-15 20:46:45] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "8c9d9a2ee4b77f17c7919a47b2642ae3a38b3a7cbc27c09c75054c518d0e3c4a" not found
+[2025-06-15 20:46:46] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "d1c84e78493b336a5df4e1ba6ac043f419edee19be983701055a6479d979b252" not found
+[2025-06-15 20:46:47] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "cbcbe0dbb6eda494416c9fc3b5b750a1e872ab26cf7dafca8974869ef321c0e4" not found
+[2025-06-15 20:46:47] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "7bdf0492a7c57110856bd1259d566875c52829ad84ae95160759f86832438759" not found
+[2025-06-15 20:46:48] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "34ebcf1972b72ed160cf6a9fe3f2144fab892dd385bbb8d528dcb83712d3dc25" not found
+[2025-06-15 20:46:48] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "db28607c8177adb1549d55c282e9d5dde81e8209fa2b79fd3565bc028b1637cd" not found
+[2025-06-15 20:46:49] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "30b6e3cfb9a76d9024da8d93e7c20ed143a5df26a11097ac5354292ff43b73c6" not found
+[2025-06-15 20:46:49] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "14ffee90200041c1d3ceb08f76132d9707b91f478de40fc61a6c88e75f5ae882" not found
+[2025-06-15 20:46:50] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "0e4027f55e751f43c4e1aadc5fb3a742d5c35b052acc8fe9f4b458bc682fe11e" not found
+[2025-06-15 20:46:50] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "0deb3d6b4a127a84a7e0b262051927b7fc5bbc3c63729d56d0b8a2030039c17f" not found
+[2025-06-15 20:46:51] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "d5f235aba5629818123eb77bdc3bbd6f996568d8a0947abaf891c2da01f9fe94" not found
+[2025-06-15 20:46:51] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "e16bcfb5f0cd5bff053806e037e8f6e44b49c1e5833827b4cfac62ffbb0c9505" not found
+[2025-06-15 20:46:52] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "79c0528364dc00777e7580b45e5b6965e9d54f075eb4bee561e239248f013da3" not found
+[2025-06-15 20:46:52] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "2752f88a7f0f28f59f4d5729b0a90798fa04fd7b453ca27931ab45c1eba154d8" not found
+[2025-06-15 20:46:53] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "ef8c8f03259d1f65b0d496dc8280ab43d287b4f5ec9fd871d4a9ef6456ec37d4" not found
+[2025-06-15 20:46:53] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "e3a1c98e19e06f16efcc7289b60bbdab3282e405c8c7b96ddffb7f96af71df7f" not found
+[2025-06-15 20:46:54] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "f4646f7c249168e22e326108481332c9798da6f93ba9743be41781996b9cc67d" not found
+[2025-06-15 20:46:54] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "7514330ad1f0e1f7a062a2b92e001f152bae5786361073b47b725f3a44a04cca" not found
+[2025-06-15 20:46:55] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-15 20:46:56] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "728464d9971413f29080a002c2569ee7ee273a7aeb752c1a2805dad40113228b" not found
+[2025-06-15 20:46:57] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "c472d66f58d60d1e7bd8e735156e042a8ae7abdec643e5d5f820c360d4275761" not found
+[2025-06-15 20:46:57] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "6df33c6e766fed27a9b28fb57f9f3e308dcb59e93f7d129b70f7453138dd6613" not found
+[2025-06-15 20:46:57] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "ab599296e3e47738789269426ac1084c39f3fc92dbb19cb5473a663a665dab0b" not found
+[2025-06-15 20:46:58] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "805bfd07b9119ff8ce9e3153c06224562195f0305bd5f67be05c95980c4140d6" not found
+[2025-06-15 20:46:58] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "765e2630b33b6f219ec8484374d0e4cc1bee5db2bdaed275bca519c92ca9b4aa" not found
+[2025-06-15 20:46:59] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "f8bc8538db04acbf739c00ea0390861ba36cf035afadd42d5f2b45355f65b8db" not found
+[2025-06-15 20:46:59] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "3ee7b4e9aa196b58e938c7d851cdb08a43b12560a84c39ba186936329fb7952b" not found
+[2025-06-15 20:47:00] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "4b5f189f8c8f7bf790985db7d644bb570f88fedd6d66fe72ed1fb7be85b31e56" not found
+[2025-06-15 20:47:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:01] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:04] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:04] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:05] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:06] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:11] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:14] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:14] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:15] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:15] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:16] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:16] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:17] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:17] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:21] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:36] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:36] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:37] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:37] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:38] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:41] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:41] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:42] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:42] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:43] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:43] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:44] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:44] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:49] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:49] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:50] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:51] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:52] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:52] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:52] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:53] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:54] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:55] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:47:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:01] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 20:48:01] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 20:48:01] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 20:48:01] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 20:48:01] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 20:48:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:04] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:04] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:05] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:05] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:06] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:06] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:11] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:15] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:15] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:16] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:17] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:21] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:21] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:36] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:37] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:37] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:38] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:38] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:41] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:42] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:42] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:43] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:43] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:44] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:44] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:49] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:49] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:50] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:51] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:48:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:49:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:51:55] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 20:51:55] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 20:51:55] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 20:51:55] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 20:51:55] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 20:58:54] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 20:58:54] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 20:58:54] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 20:58:54] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 20:58:54] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 20:58:54] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:55] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:55] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:58:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:01] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:04] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:04] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:05] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:05] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:06] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:11] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:11] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:14] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:14] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:15] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:15] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:15] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:16] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:17] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:17] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:21] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:36] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:36] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:37] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:37] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:37] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:44] C:\Program Files\Adobe\Acrobat DC\Acrobat\AcroCEF\chrome_elf.dll | Detecci�n: heur�stica | Acci�n: ignorado
+[2025-06-15 20:59:44] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:46] C:\Program Files\Adobe\Acrobat DC\Acrobat\AcroCEF\libcef.dll | Detecci�n: heur�stica | Acci�n: ignorado
+[2025-06-15 20:59:46] C:\Program Files\Adobe\Acrobat DC\Acrobat\AcroCEF\AcroCEF.exe | Detecci�n: heur�stica | Acci�n: ignorado
+[2025-06-15 20:59:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:51] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:51] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:52] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:52] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:53] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:54] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:54] C:\Program Files\Adobe\Acrobat DC\Acrobat\AcroCEF\vk_swiftshader.dll | Detecci�n: heur�stica | Acci�n: ignorado
+[2025-06-15 20:59:54] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:54] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:55] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:55] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:55] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 20:59:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:01] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:05] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:06] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:06] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:00:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded

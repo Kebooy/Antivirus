@@ -1,8 +1,8 @@
-import wmi      # Para interactuar con WMI en Windows
-import os       # Operaciones con el sistema de archivos
-import ctypes   # Para comprobar privilegios de administrador en Windows
-import json     # Para que los virus ignorados persistan entre sesiones
-
+from datetime import datetime
+import wmi
+import os
+import ctypes
+import json
 from antivirus.hash_analyzer import HashAnalyzer
 from antivirus.heuristic_analyzer import HeuristicAnalyzer
 from antivirus.virustotal_scanner import VirusTotalScanner
@@ -11,17 +11,10 @@ from antivirus.logger import Logger
 from database.hash_db import HashDB
 from dotenv import load_dotenv
 
-load_dotenv() # Cargo las variables de entorno
+load_dotenv()
 
 class Antivirus:
     def __init__(self, mostrar_func=None, gui=None):
-        """
-        Inicializa la clase Antivirus.
-        - Configura la clave API de VirusTotal.
-        - Carga los hashes de malware conocidos.
-        - Crea la carpeta de cuarentena para aislar los archivos maliciosos.
-        Si no tengo ninguna función para mostrar mensajes, uso print por defecto.
-        """
         if mostrar_func is None:
             self.mostrar_func = print
         else:
@@ -31,10 +24,7 @@ class Antivirus:
         self.hash_analyzer = HashAnalyzer()
         self.heuristic = HeuristicAnalyzer()
         self.gui = gui
-        if gui:
-            self.root = gui.root # guardar referencia a la ventana principal
-        else:
-            self.root = None
+        self.root = gui.root if gui else None
 
         api_key = os.getenv("API_KEY")
         if not api_key or len(api_key) < 32:
@@ -48,22 +38,21 @@ class Antivirus:
         self.archivo_ignorados = "ignorados.json"
         self.cargar_ignorados()
 
+        # Control de escaneo mejorado
         self.detener = False
-
-        self.estado_guardado = "estado_escaneo.json"
-        self.escaneo_pendiente = None
-        self.ultima_ruta = None
-        self.tipo_escaneo = None
-        self.cargar_estado_escaneo()
+        self.estado_escaneo_file = "estado_escaneo.json"
+        self.escaneo_activo = False
+        self.ultimo_directorio = None
+        self.ultimo_archivo = None
+        self.directorios_pendientes = []
+        self.tipo_escaneo_actual = None
+        self.rutas_rapido = []  # Rutas específicas para escaneo rápido
+        self.ruta_actual_index = 0  # Índice de la ruta actual en escaneo rápido
 
     def log(self, mensaje):
         self.mostrar_func(mensaje)
 
     def guardar_ignorados(self):
-        """
-        Guardo los archivos que han sido ignorados en un json para poder cargarlos después.
-        Con esto hago que estos archivos persistan entre sesiones.
-        """
         try:
             with open(self.archivo_ignorados, "w") as f:
                 json.dump(list(self.virus_ignorados), f)
@@ -71,9 +60,6 @@ class Antivirus:
             self.log(f"Error al guardar virus ignorados: {e}")
 
     def cargar_ignorados(self):
-        """
-        Cargo los archivos ignorados desde el json para no volver a detectarlos.
-        """
         try:
             with open(self.archivo_ignorados, "r") as f:
                 self.virus_ignorados = set(json.load(f))
@@ -83,38 +69,66 @@ class Antivirus:
             self.log(f"Error al cargar ignorados: {e}")
             self.virus_ignorados = set()
 
-    def guardar_estado_escaneo(self, tipo, ruta):
-        estado = {"tipo": tipo, "ruta": ruta}
-        with open(self.estado_guardado, "w") as estado_file:
-            json.dump(estado, estado_file)
+    def guardar_estado_escaneo(self):
+        estado = {
+            'tipo_escaneo': self.tipo_escaneo_actual,
+            'ultimo_directorio': self.ultimo_directorio,
+            'ultimo_archivo': self.ultimo_archivo,
+            'directorios_pendientes': self.directorios_pendientes,
+            'rutas_rapido': self.rutas_rapido,
+            'ruta_actual_index': self.ruta_actual_index,
+            'timestamp': datetime.now().isoformat()
+        }
+        try:
+            with open(self.estado_escaneo_file, 'w') as f:
+                json.dump(estado, f)
+        except Exception as e:
+            self.log(f"Error al guardar estado de escaneo: {e}")
 
     def cargar_estado_escaneo(self):
         try:
-            with open(self.estado_guardado, "r") as estado_file:
-                estado = json.load(estado_file)
-                self.escaneo_pendiente = True
-                self.tipo_escaneo = estado.get("tipo")
-                self.ultima_ruta = estado.get("ruta")
-        except:
-            self.escaneo_pendiente = False
-            self.tipo_escaneo = None
-            self.ultima_ruta = None
+            with open(self.estado_escaneo_file, 'r') as f:
+                estado = json.load(f)
+                self.tipo_escaneo_actual = estado.get('tipo_escaneo')
+                self.ultimo_directorio = estado.get('ultimo_directorio')
+                self.ultimo_archivo = estado.get('ultimo_archivo')
+                self.directorios_pendientes = estado.get('directorios_pendientes', [])
+                self.rutas_rapido = estado.get('rutas_rapido', [])
+                self.ruta_actual_index = estado.get('ruta_actual_index', 0)
+                return True
+        except (FileNotFoundError, json.JSONDecodeError):
+            return False
+        except Exception as e:
+            self.log(f"Error al cargar estado de escaneo: {e}")
+            return False
 
     def limpiar_estado_escaneo(self):
-        self.escaneo_pendiente = False
-        self.tipo_escaneo = None
-        self.ultima_ruta = None
-        if os.path.exists(self.estado_guardado):
-            os.remove(self.estado_guardado)
+        try:
+            if os.path.exists(self.estado_escaneo_file):
+                os.remove(self.estado_escaneo_file)
+        except Exception as e:
+            self.log(f"Error al limpiar estado de escaneo: {e}")
+        finally:
+            self.ultimo_directorio = None
+            self.ultimo_archivo = None
+            self.directorios_pendientes = []
+            self.tipo_escaneo_actual = None
+            self.rutas_rapido = []
+            self.ruta_actual_index = 0
+
+    def pausar_escaneo(self):
+        self.detener = True
+        self.guardar_estado_escaneo()
+        self.escaneo_activo = False
+
+    def reanudar_escaneo(self):
+        if self.cargar_estado_escaneo():
+            self.detener = False
+            self.escaneo_activo = True
+            return True
+        return False
 
     def analizar_archivo(self, archivo):
-        """
-        Analiza un único archivo en busca de malware.
-        - Primero calcula su hash y lo compara con los hashes conocidos.
-        - Luego realiza un análisis heurístico buscando patrones sospechosos.
-        - Finalmente, consulta VirusTotal para obtener más información.
-        """
-
         try:
             hash_archivo = self.hash_analyzer.calcular_hash(archivo)
             if not hash_archivo:
@@ -127,7 +141,6 @@ class Antivirus:
 
             accion_requerida = None
 
-            # Verificaciones de malware
             if hash_archivo in self.hash_analyzer.hashes_maliciosos:
                 self.log(f"⚠️ ¡ALERTA! {archivo} es un malware conocido localmente")
                 accion_requerida = "local"
@@ -140,7 +153,6 @@ class Antivirus:
             else:
                 self.log(f"✅ {archivo} parece seguro")
 
-            # Mostrar ventana de opciones si se detectó algo
             if accion_requerida and self.gui:
                 self.root.after(0, lambda: self.procesar_opcion_con_gui(archivo, accion_requerida))
 
@@ -148,26 +160,8 @@ class Antivirus:
             self.log(f"❌ Error al analizar {archivo}: {str(e)}")
 
     def procesar_opcion_con_gui(self, archivo, accion_requerida):
-        """Método auxiliar para manejar la GUI en el hilo principal"""
         opcion = self.gui.ventana_opciones_amenaza(archivo, accion_requerida)
         self.procesar_opcion(opcion, archivo, accion_requerida)
-
-    def analizar_directorio(self, directorio):
-        """
-        Recorre un directorio y analiza todos los archivos que contiene.
-        Esto es útil para hacer escaneos completos.
-        """
-        self.log(f"🔍 Escaneando el directorio: {directorio}")
-        for raiz, _, archivos in os.walk(directorio): # Recorre recursivamente todos los subdirectorios
-            if self.detener:
-                self.log(f"⛔ Escaneo detenido en el directorio: {raiz}")
-                return # corta el escaneo
-            for archivo in archivos:
-                if self.detener:
-                    self.log(f"⛔ Escaneo detenido al procesar el archivo: {archivo}")
-                    return
-                ruta_completa = os.path.join(raiz, archivo)
-                self.analizar_archivo(ruta_completa)
 
     def procesar_opcion(self, opcion, archivo, accion_requerida):
         if opcion == "1":
@@ -191,11 +185,133 @@ class Antivirus:
         else:
             self.mostrar_func("⚠️ Opción no válida. No se realizó ninguna acción.")
 
+    def analizar_directorio(self, directorio, reanudar=False):
+        """Versión mejorada con reanudación precisa"""
+        self.log(f"🔍 Escaneando el directorio: {directorio}")
+
+        reanudando = reanudar and self.ultimo_archivo is not None
+        encontrado_ultimo = not reanudando
+        directorio_actual = None
+
+        if reanudando:
+            self.log(f"↩ Reanudando desde: {self.ultimo_archivo}")
+            dir_base = os.path.dirname(self.ultimo_archivo)
+
+        for raiz, dirs, archivos in os.walk(directorio):
+            if self.detener:
+                self.ultimo_directorio = raiz
+                self.directorios_pendientes = dirs.copy()
+                self.guardar_estado_escaneo()
+                self.log(f"⏸ Escaneo pausado en directorio: {raiz}")
+                return False
+
+            if reanudando and not encontrado_ultimo:
+                if raiz == dir_base:
+                    encontrado_ultimo = True
+                    archivos = [a for a in sorted(archivos)
+                                if os.path.join(raiz, a) > self.ultimo_archivo]
+                else:
+                    continue
+
+            for archivo in sorted(archivos):
+                if self.detener:
+                    self.ultimo_archivo = os.path.join(raiz, archivo)
+                    self.guardar_estado_escaneo()
+                    return False
+
+                ruta_completa = os.path.join(raiz, archivo)
+                self.ultimo_archivo = ruta_completa
+                self.analizar_archivo(ruta_completa)
+
+                if directorio_actual != raiz:
+                    directorio_actual = raiz
+                    self.ultimo_directorio = raiz
+                    self.guardar_estado_escaneo()
+
+        self.ultimo_archivo = None
+        self.ultimo_directorio = None
+        return True
+
+    def escaneo_rapido(self):
+        """Escaneo rápido con reanudación propia"""
+        self.tipo_escaneo_actual = 'rapido'
+        self.mostrar_func("Iniciando escaneo rápido...")
+
+        self.rutas_rapido = [
+            os.path.expanduser("~\Desktop"),
+            os.path.expanduser("~\Downloads"),
+            os.path.expanduser("~\Documents"),
+            os.environ.get("TEMP", ""),
+            os.path.expandvars(r"%APPDATA%"),
+        ]
+
+        reanudar = self.cargar_estado_escaneo() and self.tipo_escaneo_actual == 'rapido'
+
+        if reanudar:
+            self.mostrar_func("↩ Reanudando escaneo rápido desde el último punto...")
+            if self.ultimo_directorio:
+                try:
+                    self.ruta_actual_index = self.rutas_rapido.index(self.ultimo_directorio)
+                except ValueError:
+                    self.ruta_actual_index = 0
+        else:
+            self.ruta_actual_index = 0
+
+        self.log("Inicio de escaneo rápido")
+        for i in range(self.ruta_actual_index, len(self.rutas_rapido)):
+            if self.detener:
+                self.ruta_actual_index = i
+                self.guardar_estado_escaneo()
+                break
+
+            ruta = self.rutas_rapido[i]
+            if ruta and os.path.exists(ruta):
+                if not self.analizar_directorio(ruta, reanudar=reanudar and i==self.ruta_actual_index):
+                    break
+                reanudar = False
+            else:
+                self.log(f"⚠️ Ruta no válida o no encontrada: {ruta}")
+
+        if self.detener:
+            self.mostrar_func("⏸ Escaneo rápido pausado.")
+        else:
+            self.mostrar_func("✅ Escaneo rápido finalizado.")
+            self.limpiar_estado_escaneo()
+        self.log("Fin de escaneo rápido")
+
+    def escaneo_completo(self):
+        """Escaneo completo con reanudación propia"""
+        self.tipo_escaneo_actual = 'completo'
+        self.mostrar_func("Iniciando escaneo completo...")
+
+        unidad = "C:\\" if os.name == "nt" else "/"
+
+        reanudar = self.cargar_estado_escaneo() and self.tipo_escaneo_actual == 'completo'
+
+        if reanudar:
+            self.mostrar_func("↩ Reanudando escaneo completo desde el último punto...")
+            if self.ultimo_archivo:
+                directorio_inicial = os.path.dirname(self.ultimo_archivo)
+            else:
+                directorio_inicial = unidad
+        else:
+            directorio_inicial = unidad
+
+        self.log("Inicio de escaneo completo")
+        if not os.path.exists(unidad):
+            self.mostrar_func(f"Unidad no encontrada: {unidad}")
+
+        resultado = self.analizar_directorio(directorio_inicial, reanudar=reanudar)
+
+        if self.detener:
+            self.mostrar_func("⏸ Escaneo completo pausado.")
+        else:
+            self.mostrar_func("✅ Escaneo completo finalizado.")
+            self.limpiar_estado_escaneo()
+        self.log("Fin de escaneo completo")
+        return resultado
+
     def monitorear_procesos(self):
-        """
-        Se usa WMI para observar en tiempo real la creación de nuevos procesos.
-        Si se ejecutan desde una ruta sospechosa como Temp o AppData, se muestra una alerta.
-        """
         self.log("🔍 Monitoreando procesos en tiempo real...")
         for proceso in self.wmi_client.Win32_Process.watch_for("creation"):
             ruta = proceso.ExecutablePath
@@ -203,10 +319,6 @@ class Antivirus:
                 self.log(f"⚠️ Proceso sospechoso detectado: {proceso.Name} en {ruta}")
 
     def comprobar_privilegios(self):
-        """
-        Verifica si el antivirus se ejecuta como administrador.
-        Algunos análisis solo pueden realizarse con privilegios de administrador.
-        """
         try:
             is_admin = os.name == 'nt' and ctypes.windll.shell32.IsUserAnAdmin()
             if is_admin:
@@ -217,53 +329,3 @@ class Antivirus:
         except:
             self.log("⚠️ No se ha podido comprobar el nivel de privilegios.")
             return False
-
-    def escaneo_rapido(self):
-        """
-        Realiza un escaneo rápido solo en directorios comunes donde suele ocultarse el malware.
-        """
-        self.mostrar_func("Iniciando escaneo rápido...")
-        rutas_comunes = [
-            os.path.expanduser("~\Desktop"),
-            os.path.expanduser("~\Downloads"),
-            os.path.expanduser("~\Documents"),
-            os.environ.get("TEMP", ""),
-            os.path.expandvars(r"%APPDATA%"),
-        ]
-
-        self.log("Inicio de escaneo rápido")
-        for ruta in rutas_comunes:
-            if self.detener:
-                self.mostrar_func("⛔ Se ha detenido el escaneo rápido.")
-                self.log("Escaneo rápido detenido.")
-                return
-
-            if ruta and os.path.exists(ruta):
-                self.analizar_directorio(ruta)
-            else:
-                self.log(f"⚠️ Ruta no válida o no encontrada: {ruta}")
-        self.mostrar_func("✅ Escaneo rápido finalizado.")
-        self.log("Fin de escaneo rápido")
-
-    def escaneo_completo(self):
-        """
-        Realiza un escaneo completo del sistema recorriendo todo el disco.
-        """
-        self.mostrar_func("Iniciando escaneo completo...")
-        if os.name == "nt":
-            unidad = "C:\\" # Windows
-        else:
-            unidad = "/"  # UNIX/Linux
-
-        self.log("Inicio de escaneo completo")
-        if not os.path.exists(unidad):
-            self.mostrar_func(f"Unidad no encontrada: {unidad}")
-
-        self.analizar_directorio(unidad)
-        if self.detener:
-            self.mostrar_func("⛔ Se ha detenido el escaneo rápido.")
-            self.log("Escaneo completo detenido")
-            return
-        else:
-            self.mostrar_func("✅ Escaneo completo finalizado.")
-            self.log("Fin de escaneo completo")

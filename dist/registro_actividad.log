@@ -1354,3 +1354,344 @@
 [2025-06-15 21:00:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
 [2025-06-15 21:00:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
 [2025-06-15 21:00:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:25:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:25:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:25:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:25:36] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:25:38] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:25:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:25:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:25:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:45] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 21:26:45] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 21:26:45] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 21:26:45] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 21:26:45] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 21:26:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:49] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:50] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:50] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:26:51] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:23] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 21:27:23] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 21:27:23] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 21:27:23] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 21:27:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:27:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:27] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 21:34:27] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 21:34:27] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 21:34:27] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 21:34:27] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 21:34:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:36] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:34:36] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:46:01] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 21:46:01] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 21:46:01] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 21:46:01] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 21:46:01] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 21:46:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:46:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:46:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:46:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:46:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:46:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 21:46:04] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:08:58] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 22:08:58] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 22:08:58] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 22:08:58] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 22:08:58] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 22:08:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:08:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:08:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:08:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:14] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:14] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:14] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:15] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:15] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:16] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:17] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:17] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:21] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:09:21] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:11:32] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 22:11:32] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 22:11:32] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 22:11:32] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 22:11:32] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 22:11:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:11:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:11:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:11:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:11:34] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:11:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:11:35] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:07] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 22:13:07] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 22:13:07] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 22:13:07] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 22:13:07] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 22:13:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:13:11] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:26:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:26:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:26:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:01] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:01] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:04] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 22:27:04] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 22:27:04] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 22:27:04] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 22:27:04] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 22:27:04] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:04] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:05] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:05] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:05] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:06] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:06] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:07] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:08] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:09] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:10] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:11] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:11] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:12] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:13] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:17] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 22:27:17] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 22:27:17] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 22:27:17] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 22:27:17] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 22:27:17] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:17] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:18] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:19] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:20] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:22] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 22:27:22] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 22:27:22] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 22:27:22] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 22:27:22] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 22:27:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:26] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:57] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 22:27:57] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 22:27:57] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 22:27:57] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 22:27:57] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 22:27:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:27:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:28:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:28:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:39] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:40] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:41] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:41] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:41] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:42] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:42] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:42] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:43] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:43] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:43] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:46] Error al leer el archivo C:\DumpStack.log: [Errno 13] Permission denied: 'C:\\DumpStack.log'
+[2025-06-15 22:36:46] Error al leer el archivo C:\DumpStack.log.tmp: [Errno 13] Permission denied: 'C:\\DumpStack.log.tmp'
+[2025-06-15 22:36:46] Error al leer el archivo C:\hiberfil.sys: [Errno 13] Permission denied: 'C:\\hiberfil.sys'
+[2025-06-15 22:36:46] Error al leer el archivo C:\pagefile.sys: [Errno 13] Permission denied: 'C:\\pagefile.sys'
+[2025-06-15 22:36:46] Error al leer el archivo C:\swapfile.sys: [Errno 13] Permission denied: 'C:\\swapfile.sys'
+[2025-06-15 22:36:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:49] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:49] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:50] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:50] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:50] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:51] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:51] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:52] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:52] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:53] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:53] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:53] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:54] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:36:54] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:30] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:31] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:32] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:43:33] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:45] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:46] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:47] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:48] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:49] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:49] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:50] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:54] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:55] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:55] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:55] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:56] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:57] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:58] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:51:59] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:52:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:52:00] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:52:01] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:52:01] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:52:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:52:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:52:02] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:52:03] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:21] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:21] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:21] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:22] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:23] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:24] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:25] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:27] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:28] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded
+[2025-06-15 22:53:29] ❌ Error al consultar VirusTotal: Error QuotaExceededError (429): Quota exceeded

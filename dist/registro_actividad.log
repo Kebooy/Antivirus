@@ -1725,3 +1725,20 @@
 [2025-06-16 10:28:48] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "e5c0b242fff4d8833827649635b403abe6a3ae30ad5e137f73a974b599538e46" not found
 [2025-06-16 10:28:49] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5de4999ebf1769437e12182e5d9c254946ddd287feb2b941fe84b8a93074186f" not found
 [2025-06-16 10:28:49] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "aac9a56c7800d11c8e9825d696188e7f55b064ede008e2c1d23b091f8ab36b8b" not found
+[2025-06-16 10:39:10] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5dd70a0d38acac7c939adb4479df8195243bf2e23080e4346c5136e24a13901f" not found
+[2025-06-16 10:39:10] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5a7afc2ac3e33e9796329cb7f6e5f53f98ba7a913860c8cc8494e53dd8bd7d9f" not found
+[2025-06-16 10:39:11] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "6e19a3370b3d77aa28968b833efce2a9173bb1d59fc72794f8b75eba797b66a3" not found
+[2025-06-16 10:39:11] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5c9a02ba464e7628cdfbf1a93f7dd98ff4430367a136b4a37fec7b3a190068af" not found
+[2025-06-16 10:39:11] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "ed6e899cf8d03f69b077905ede01e45016fed19d0acc2eed18ad43bcf3f3020d" not found
+[2025-06-16 10:39:11] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "3c089e54adf13bdfcc6f4c2501573a791e4ab026155d932d403a0be2aa99c063" not found
+[2025-06-16 10:39:12] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "02cb2f73b47e69199b77c91951139edfed93b631bb5d2900a5c3823b1097d111" not found
+[2025-06-16 10:39:12] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "1af0ddd9892fea963d337cc7264269b50eae876931bef3e9110c52770ed70a68" not found
+[2025-06-16 10:39:13] ❌ Error al consultar VirusTotal: 'VirustotalResponse' object is not subscriptable
+[2025-06-16 10:39:13] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "5c9a02ba464e7628cdfbf1a93f7dd98ff4430367a136b4a37fec7b3a190068af" not found
+[2025-06-16 10:39:14] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "4ce2ff31a218110ba0493571035c675a9f12d2effba465b648f7af859b2d5cce" not found
+[2025-06-16 10:39:14] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "a885bf3c331e5b5159cc646a67d213cbfc0c47de5a9cda6ed5f4454b8154623f" not found
+[2025-06-16 10:39:14] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "d6a7ebeffd1d71d04c180de556b958a50e5490fbf4f571f07c47585ff79d659a" not found
+[2025-06-16 10:39:15] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "60432e215dae5808d2e0c1ab5ffbb6dbfd072ac9f4ed60e530f7a9de124a6ac5" not found
+[2025-06-16 10:39:15] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "3071a01767002b84ac951b3f781c3d9ac164823727b1173268d1d7bff1e47f3a" not found
+[2025-06-16 10:39:16] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "dc15eb0ca4889d9ea7cd7d7bf859ab86b009932208bce351c393f67a766f3929" not found
+[2025-06-16 10:39:16] ❌ Error al consultar VirusTotal: Error NotFoundError (404): File "bfc4d4318e66804ea6711e21573e4c46abf146ea09413a11d990d6a6947e33f4" not found

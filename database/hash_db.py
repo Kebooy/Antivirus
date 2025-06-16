@@ -26,7 +26,7 @@ class HashDB:
         """
         fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         try:
-            self.cursor.execute("INSERT OR IGNORE INTO hashes (hash, ruta, fecha) VALUES (?, ?, ?)",
+            self.cursor.execute("INSERT OR IGNORE INTO hashes (hash, ruta, fecha) VALUES (?, ?, ?)", # Impedir duplicados
                                 (hash_valor, ruta, fecha))
             self.conn.commit()
         except sqlite3.Error as e:
@@ -62,7 +62,5 @@ class HashDB:
         return [f"Hash: {row[0]} | Ruta: {row[1]}" for row in self.cursor.fetchall()]
 
     def cerrar(self):
-        """
-        Cierra la conexión a la base de datos
-        """
+        """Cierra la conexión a la base de datos"""
         self.conn.close()

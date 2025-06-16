@@ -1,3 +1,4 @@
+import csv
 import sqlite3
 from datetime import datetime
 
@@ -6,6 +7,7 @@ class HashDB:
         self.conn = sqlite3.connect(db_path)
         self.cursor = self.conn.cursor()
         self._crear_tabla()
+        self._cargar_csv_automatico()
 
     def _crear_tabla(self):
         self.cursor.execute("""
@@ -43,6 +45,21 @@ class HashDB:
         """
         self.cursor.execute("SELECT * FROM hashes")
         return self.cursor.fetchall()
+
+    def _cargar_csv_automatico(self):
+        try:
+            with open("database/hashes_maliciosos.csv", "r") as f:
+                for line in f:
+                    if "," in line:
+                        hash_valor, ruta = line.strip().split(",", 1)
+                        self.guardar_hash(hash_valor, ruta)
+        except FileNotFoundError:
+            print("No se encontró 'hashes_maliciosos.csv'. La base de datos estará vacía.")
+
+    def obtener_hashes_formateados(self):
+        """Devuelve una lista de strings con los hashes y rutas para mostrar en la GUI."""
+        self.cursor.execute("SELECT hash, ruta FROM hashes")
+        return [f"Hash: {row[0]} | Ruta: {row[1]}" for row in self.cursor.fetchall()]
 
     def cerrar(self):
         """

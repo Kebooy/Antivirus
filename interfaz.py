@@ -1,7 +1,7 @@
 from ttkbootstrap import Style, Frame, Label, Button, ScrolledText, Treeview
 from ttkbootstrap.constants import *
 from antivirus.antivirus import Antivirus
-from tkinter import messagebox, Toplevel
+from tkinter import messagebox, Toplevel, ttk
 import threading
 import os
 
@@ -131,18 +131,70 @@ class AntivirusGUI:
         self.text_area.pack(fill=BOTH, expand=YES)
 
     def construir_tab_hashes(self):
-        self.tree = Treeview(self.frame_hashes, columns=("Hash", "Fuente", "Fecha"), show='headings', height=15)
-        self.tree.heading("Hash", text="Hash")
-        self.tree.heading("Fuente", text="Fuente")
-        self.tree.heading("Fecha", text="Fecha")
-        self.tree.column("Hash", width=300)
-        self.tree.column("Fuente", width=100)
-        self.tree.column("Fecha", width=150)
-        self.tree.pack(fill=BOTH, expand=YES)
+        # Frame para el Treeview y la barra de desplazamiento
+        tree_frame = Frame(self.frame_hashes)
+        tree_frame.pack(fill=BOTH, expand=YES, padx=5, pady=5)
 
+        # Treeview con barras de desplazamiento
+        self.tree = Treeview(tree_frame, columns=("Hash", "Ruta", "Fecha"), show='headings', height=15)
+
+        # Configuración de columnas
+        self.tree.heading("Hash", text="Hash")
+        self.tree.heading("Ruta", text="Ruta")
+        self.tree.heading("Fecha", text="Fecha")
+
+        self.tree.column("Hash", width=300, anchor='w')
+        self.tree.column("Ruta", width=350, anchor='w')
+        self.tree.column("Fecha", width=150, anchor='center')
+
+        # Barras de desplazamiento
+        y_scroll = ttk.Scrollbar(tree_frame, orient="vertical", command=self.tree.yview)
+        x_scroll = ttk.Scrollbar(tree_frame, orient="horizontal", command=self.tree.xview)
+        self.tree.configure(yscrollcommand=y_scroll.set, xscrollcommand=x_scroll.set)
+
+        # Diseño de la cuadrícula
+        self.tree.grid(row=0, column=0, sticky="nsew")
+        y_scroll.grid(row=0, column=1, sticky="ns")
+        x_scroll.grid(row=1, column=0, sticky="ew")
+
+        # Configurar el peso de la fila y columna
+        tree_frame.grid_rowconfigure(0, weight=1)
+        tree_frame.grid_columnconfigure(0, weight=1)
+
+        # Botón de actualización
         Button(self.frame_hashes, text=self.texts[self.current_lang]['refrescar'], bootstyle="secondary",
                command=self.actualizar_hashes).pack(pady=10)
+
+        # Cargar datos iniciales
         self.actualizar_hashes()
+
+    def construir_tab_config(self):
+        Label(self.frame_config, text=self.texts[self.current_lang]['configuracion'],
+              font=("Segoe UI", 16, "bold")).pack(anchor=W, pady=(0, 10))
+
+        Label(self.frame_config, text=self.texts[self.current_lang]['tema'], font=("Segoe UI", 12)).pack(anchor=W)
+        self.btn_tema = Button(self.frame_config, text=self.texts[self.current_lang]['oscuro'], bootstyle="secondary",
+                               width=15, command=self.cambiar_tema)
+        self.btn_tema.pack(pady=(0, 15))
+
+        Label(self.frame_config, text=self.texts[self.current_lang]['idioma'], font=("Segoe UI", 12)).pack(anchor=W)
+        self.btn_idioma = Button(self.frame_config, text=self.texts[self.current_lang]['ingles'], bootstyle="secondary",
+                                 width=15, command=self.cambiar_idioma)
+        self.btn_idioma.pack()
+
+    def actualizar_hashes(self):
+        """Actualiza el Treeview con los hashes de la base de datos"""
+        # Limpiar el Treeview
+        for item in self.tree.get_children():
+            self.tree.delete(item)
+
+        # Obtener todos los hashes de la base de datos
+        hashes = self.antivirus.hash_db.obtener_todos()
+
+        # Insertar los hashes en el Treeview
+        for hash_data in hashes:
+            # hash_data es una tupla: (id, hash, ruta, fecha)
+            self.tree.insert("", "end", values=(hash_data[1], hash_data[2], hash_data[3]))
 
     def construir_tab_config(self):
         Label(self.frame_config, text=self.texts[self.current_lang]['configuracion'],
